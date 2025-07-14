@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RGNICT Jhalwa Prayagraj</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="rgnict.css">
+
+
+</head>
+<body>
+  <header>
+    <div>
+      <img src="images/logo11.png" alt="ABC College Logo" class="logo" />
+      <h1>Rajeev Gandhi National Institute of Computer Technology</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ <section id="home" class="hero">
+  <h2>Welcome to Rajeev Gandhi National Institute of Computer Technology</h2>
+
+  <div class="director-hero">
+    <img src="images/director.png" alt="Director Image" class="director-img" />
+    <div class="director-thought">
+      <p>
+        "At RGNICT, we don’t just teach technology – we nurture innovators, creators, and future leaders.
+        Let your journey with us shape the world of tomorrow."
+      </p>
+      <h4>— Director, RGNICT</h4>
+      <button class="see-more-btn" onclick="openModal('modalDirector')">
+  See More!!
+</button>
+
+    </div>
+  </div>
+</section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <div><a href=""><img src="" alt=""></a></div>
+    <p>WE, RGNICT, offering a comprehensive O Level, BCA, MCA, PGDCA, BA, MB programs. RGNICT is located in Prayagraj, UP, India. The RGNICT is renowned for its high-quality education and corporate-relevant curriculum. As a IT graduate from RGNICT, you will be well-prepared to embark on a successful career in areas such as software development, database management, system administration, IT consulting, or pursue higher education in computer science or related fields. We invite you to join RGNICT and become part of our vibrant academic community, where innovation, excellence, and career growth are nurtured.</p>
+  </section>
+
+ <section id="courses">
+  <h2>Courses</h2>
+
+  <div class="course-box" onmouseenter="showDropdown('drop1')" onmouseleave="hideDropdown('drop1')">
+    <img src="images/rgcsm_L.png" class="courseL" />
+    <div class="course-title">RGCSM Course</div>
+    <div class="dropdown-content" id="drop1">
+      <p onclick="openModal('modalDCA')">DCA</p>
+      <p onclick="openModal('modalADCA')">ADCA</p>
+      <p onclick="openModal('modalDCAA')">DCAA</p>
+      <p onclick="openModal('modalPGDCA')">PGDCA</p>
+      <p onclick="openModal('modalDOAP')">DOAP</p>
+    </div>
+  </div>
+
+  <div class="course-box" onmouseenter="showDropdown('drop2')" onmouseleave="hideDropdown('drop2')">
+    <img src="images/nielit_L.png" class="courseL" />
+    <div class="course-title">NIELIT Course</div>
+    <div class="dropdown-content" id="drop2">
+      <p onclick="openModal('modalCCC')">CCC</p>
+      <p onclick="openModal('modalOLEVEL')">O LEVEL</p>
+      <p onclick="openModal('modalALEVEL')">A LEVEL</p>
+    </div>
+  </div>
+
+<div class="course-box" onmouseenter="showDropdown('drop3')" onmouseleave="hideDropdown('drop3')">
+  <img src="images/university_L1.jpg" class="courseL" alt="Loading" />
+  <div class="course-title">UNIVERSITY Course</div>
+  <div class="dropdown-content" id="drop3">
+    <p onclick="openModal('modalBA')">BA</p>
+    <p onclick="openModal('modalBCA')">BCA</p>
+    <p onclick="openModal('modalBSC')">B.Sc.</p>
+    <p onclick="openModal('modalBCOM')">B.Com</p>
+    <p onclick="openModal('modalLLB')">LLB</p>
+  </div>
+</div>
+<div class="course-box" onmouseenter="showDropdown('drop4')" onmouseleave="hideDropdown('drop4')">
+  <div style="font-size: 30px;"><img src="images/logo11.png" class="courseL" alt="Loading" /></div>
+  <div class="course-title">Our Institute Course</div>
+  <div class="dropdown-content" id="drop4">
+    <p onclick="openModal('modalHT')">Hindi Typing</p>
+    <p onclick="openModal('modalET')">English Typing</p>
+    <p onclick="openModal('modalSH')">Shorthand</p>
+    <p onclick="openModal('modalTALLY')">TALLY WITH GST</p>
+    <p onclick="openModal('modalBASIC')">Basic</p>
+  </div>
+</div>
+</section>
+
+<!-- Modals will be inserted here next -->
+
+<!-- Modal for DCA -->
+<div id="modalDCA" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalDCA')">&times;</span>
+    <h2>DCA - Diploma in Computer Applications</h2>
+    <h4>WHAT YOU WILL LEARN:</h4>
+    <ul><li>Computer Concept & Fundamentals</li><li>Operating System</li><li>MS Office Tools</li><li>HTML, CSS, JavaScript</li></ul>
+  </div>
+</div>
+
+<!-- Modal for ADCA -->
+<div id="modalADCA" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalADCA')">&times;</span>
+    <h2>ADCA - Advanced Diploma in Computer Applications</h2>
+    <h4>WHAT YOU WILL LEARN:</h4>
+    <ul><li>Computer Concept & Fundamentals</li><li>Operating System</li><li>MS Office Tools</li><li>Computer Network & Internet</li><li>HTML, CSS, JavaScript</li></ul>
+  </div>
+</div>
+
+<!-- Modal for DCAA -->
+<div id="modalDCAA" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalDCAA')">&times;</span>
+    <h2>DCAA - Diploma in Computerized Accounting & Applications</h2>
+    <h4>WHAT YOU WILL LEARN:</h4>
+    <ul><li>Computer Concept & Fundamentals</li><li>MS Office Tools</li><li>Tally with GST</li></ul>
+  </div>
+</div>
+
+<!-- Modal for PGDCA -->
+<div id="modalPGDCA" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalPGDCA')">&times;</span>
+    <h2>PGDCA - Post Graduate Diploma in Computer Applications</h2>
+    <h4>WHAT YOU WILL LEARN:</h4>
+    <ul><li>IT Tools</li><li>HTML, CSS, JavaScript</li><li>C++</li><li>DBMS, SQL</li></ul>
+  </div>
+</div>
+
+<!-- Modal for DOAP -->
+<div id="modalDOAP" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalDOAP')">&times;</span>
+    <h2>DOAP - Diploma in Office Automation & Publishing</h2>
+    <h4>WHAT YOU WILL LEARN:</h4>
+    <ul><li>IT Tools</li><li>Basics of Financial Accounting</li><li>Tally with GST</li><li>D.T.P. (PageMaker, CorelDraw, Photoshop)</li><li>HTTML, CSS, JavaScript</li></ul>
+  </div>
+</div>
+
+<!-- Modal for CCC -->
+<div id="modalCCC" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalCCC')">&times;</span>
+    <h2>CCC - Course on Computer Concepts</h2>
+    <h4>WHAT YOU WILL LEARN:</h4>
+    <ul><li>Computer Concept & Fundamentals</li><li>Operating System</li><li>MS Office Tools</li><li>Computer Network & Internet</li><li>Overview of futureSkills and Cyber securty</li></ul>
+  </div>
+</div>
+
+<!-- Modal for O LEVEL -->
+<div id="modalOLEVEL" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalOLEVEL')">&times;</span>
+    <h2>O Level</h2>
+    <p>DOEACC NIELIT foundational IT course.</p>
+    <ul><li>IT Tools and Business Systems</li><li>Internet Technology</li><li>Python Programming</li></ul>
+  </div>
+</div>
+
+<!-- Modal for A LEVEL -->
+<div id="modalALEVEL" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalALEVEL')">&times;</span>
+    <h2>A Level</h2>
+    <p>Advanced DOEACC NIELIT program for software developers.</p>
+    <ul><li>Data Structures</li><li>Java & Web Development</li><li>Project Work</li></ul>
+  </div>
+</div>
+
+<!-- Modal for BA -->
+<div id="modalBA" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalBA')">&times;</span>
+    <h2>BA - Bachelor of Arts</h2>
+    <p>Undergraduate program in humanities and social sciences.</p>
+    <ul><li>Political Science</li><li>Hindi Literature</li><li>Economics</li></ul>
+  </div>
+</div>
+
+<!-- Modal for BCA -->
+<div id="modalBCA" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalBCA')">&times;</span>
+    <h2>BCA - Bachelor of Computer Applications</h2>
+    <p>Graduate course in software and application development.</p>
+    <ul><li>Programming Languages</li><li>DBMS</li><li>Software Projects</li></ul>
+  </div>
+</div>
+
+<!-- Modal for BSC -->
+<div id="modalBSC" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalBSC')">&times;</span>
+    <h2>B.Sc. - Bachelor of Science</h2>
+    <p>Undergraduate degree in various science streams.</p>
+    <ul><li>Mathematics</li><li>Physics</li><li>Biology / Chemistry</li></ul>
+  </div>
+</div>
+
+<!-- Modal for BCOM -->
+<div id="modalBCOM" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalBCOM')">&times;</span>
+    <h2>B.Com - Bachelor of Commerce</h2>
+    <p>Undergraduate program in commerce and finance.</p>
+    <ul><li>Accounting</li><li>Business Law</li><li>Taxation</li></ul>
+  </div>
+</div>
+
+<!-- Modal for LLB -->
+<div id="modalLLB" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalLLB')">&times;</span>
+    <h2>LLB - Bachelor of Laws</h2>
+    <p>Professional course in legal studies.</p>
+    <ul><li>Indian Penal Code</li><li>Criminal & Civil Law</li><li>Legal Drafting</li></ul>
+  </div>
+</div>
+
+<!-- Modal for Hindi Typing -->
+<div id="modalHT" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalHT')">&times;</span>
+    <h2>Hindi Typing</h2>
+    <p>Typing practice and accuracy in Hindi using Kruti Dev/Inscript layout.</p>
+    <ul><li>Speed Development</li><li>Typing Tests</li><li>Keyboard Practice</li></ul>
+  </div>
+</div>
+
+<!-- Modal for English Typing -->
+<div id="modalET" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalET')">&times;</span>
+    <h2>English Typing</h2>
+    <p>Improves typing speed and efficiency in English.</p>
+    <ul><li>Home Row Technique</li><li>Speed Accuracy Tests</li><li>Practice Paragraphs</li></ul>
+  </div>
+</div>
+
+<!-- Modal for Shorthand -->
+<div id="modalSH" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalSH')">&times;</span>
+    <h2>Shorthand</h2>
+    <p>Learn stenography for government and administrative jobs.</p>
+    <ul><li>English/Hindi Outlines</li><li>Dictation Practice</li><li>Transcription</li></ul>
+  </div>
+</div>
+
+<!-- Modal for TALLY WITH GST -->
+<div id="modalTALLY" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalTALLY')">&times;</span>
+    <h2>Tally with GST</h2>
+    <p>Master Tally ERP with GST integration and business accounting features.</p>
+    <ul><li>Company Creation</li><li>GST Configuration</li><li>Reports and Returns</li></ul>
+  </div>
+</div>
+
+<!-- Modal for Basic -->
+<div id="modalBASIC" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modalBASIC')">&times;</span>
+    <h2>Basic Computer Course</h2>
+    <p>Introduction to computers for beginners.</p>
+    <ul><li>Computer Overview</li><li>MS Paint</li><li>Typing Practice</li></ul>
+  </div>
+</div>
+
+<!-- Modal for Director Message -->
+<!-- Modal for Director Message -->
+<div id="modalDirector" class="modal">
+  <div class="modal-content">
+    <p><strong>Dear Students,</strong></p>
+
+    <p>Welcome to a new chapter of growth, discovery, and transformation.</p>
+
+    <p>In this digital era, technology is no longer just a subject—it is the language of the future. As the Director of this institution, I am proud to say that you are part of a learning community that doesn't just teach computers; we shape creators, innovators, and future leaders of the tech-driven world.</p>
+
+    <p>Each course you undertake—whether it’s programming, web development, networking, or data science—is more than just curriculum. It’s a gateway to opportunities, a tool to solve real-world problems, and a way to empower yourself and others.</p>
+
+    <p>At our institution, we believe that education is not about memorizing code, but about creating change. We focus on hands-on learning, project-based training, and industry-relevant skills so that every student can leave not only with a certificate, but with confidence and capability.</p>
+
+    <p>I urge you to dream big, stay curious, and never stop learning. Technology will challenge you, but it will also reward your efforts with innovation, creativity, and endless possibilities. Don't just aim to get a job—aim to build something, to solve something, to lead something.</p>
+
+    <p>Remember, great coders were once beginners. Great engineers were once students like you, sitting in a classroom, learning one line of code at a time. The only difference is—they never gave up.</p>
+
+    <p>Let this institution be the launchpad of your journey. Together, let's code the future.</p>
+
+    <p><strong>Warm regards,<br>
+    Mr. Lal Bihari<br>
+    Director, RGNICT</strong></p>
+
+    <button class="see-more-btn" onclick="closeModal('modalDirector')">Less</button>
+  </div>
+</div>
+
+
+
+<!-- Gallery 
+  <section id="gallery">
+    <h2>Campus Gallery</h2>
+    <div class="gallery-container">
+      <button class="scroll-btn left" onclick="scrollGallery(-1)">&#10094;</button>
+      <div class="gallery" id="imageGallery">
+        <a href="campus1.jpeg" target="_blank"><img src="images/campus1.jpeg" alt="Campus View 1" /></a>
+        <a href="lab1.jpeg" target="_blank"><img src="images/lab1.jpeg" alt="Computer Lab" /></a>
+        <a href="event1.jpeg" target="_blank"><img src="images/event1.jpeg" alt="Annual Event" /></a>
+        <a href="campus1.jpeg" target="_blank"><img src="images/campus1.jpeg" alt="Campus View 2" /></a>
+        <a href="lab1.jpeg" target="_blank"><img src="images/lab1.jpeg" alt="Lab View" /></a>
+      </div>
+      <button class="scroll-btn right" onclick="scrollGallery(1)">&#10095;</button>
+    </div>
+  </section> -->
+<section id="gallery">
+  <h2>Campus Gallery</h2>
+  <div class="gallery-container">
+    <button class="scroll-btn left" onclick="scrollGallery(-1)">&#10094;</button>
+    <div class="gallery" id="imageGallery">
+      <a href="images/campus1.jpeg"><img src="images/campus1.jpeg" alt="Campus 1" /></a>
+      <a href="images/lab1.jpeg"><img src="images/lab1.jpeg" alt="Lab" /></a>
+      <a href="images/event1.jpeg"><img src="images/event1.jpeg" alt="Event" /></a>
+      <a href="images/t1 (1).jpeg"><img src="images/t1 (1).jpeg" alt="Image 4" /></a>
+      <a href="images/t1 (4).jpeg"><img src="images/t1 (4).jpeg" alt="Image 5" /></a>
+      <a href="images/t1 (2).jpeg"><img src="images/t1 (2).jpeg" alt="Image 6" /></a>
+      <a href="images/t1 (3).jpeg"><img src="images/t1 (3).jpeg" alt="Image 7" /></a>
+    </div>
+    <button class="scroll-btn right" onclick="scrollGallery(1)">&#10095;</button>
+  </div>
+</section>
+
+
+
+ <section id="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required />
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+
+    <label for="captchaInput">Enter Code: <span id="captchaCode"></span></label>
+    <input type="text" id="captchaInput" placeholder="Enter the code above" required />
+    <p id="captchaError" style="color:red; display:none;">❌ Incorrect code. Please try again.</p>
+
+    <button type="button" onclick="sendWhatsAppMessage()">Send via WhatsApp</button>
+  </form>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Rajeev Gandhi National Institute of Computer Technology. All rights reserved.</p>
+  </footer>
+  <button id="scrollTopBtn" title="Go to top">&#8679;</button>
+  
+<!-- Image Popup Modal -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeImageModal()">&times;</span>
+  <button class="nav-btn left" onclick="changeImage(-1)">&#10094;</button>
+  <img class="modal-img" id="modalImage" src="" alt="Expanded View">
+  <button class="nav-btn right" onclick="changeImage(1)">&#10095;</button>
+</div>
+<script src="rgnict.js"></script>
+</body>
+</html>
